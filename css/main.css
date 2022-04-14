@@ -1,0 +1,229 @@
+
+a {
+    text-decoration: none;
+    /* 부모에게 상속받은 글자색을 사용한다 */
+    color: inherit;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper {
+    width: 80%;
+    /* background: gray; */
+    margin: 10px auto;
+}
+
+/* header */
+header {
+    /* background: tomato; */
+    width: 18%;
+    float: left;
+}
+header .title {
+    /* 박스 사이즈 */
+    /* width: 200px; */
+    height: 40px;
+    background: url('../images/logo.jpg') no-repeat center / cover;
+    margin: 15px auto;
+}
+header ul {
+    background: #000;
+    margin: 30px 15px;
+}
+header ul li {
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 10px;
+}
+header ul li:hover {
+    background: red;
+}
+header ul li a {
+    color: #fff;
+}
+
+/* main */
+.main-content {
+    width: 82%;
+    float: right;
+}
+.main-content .main-top {
+    background: url('../images/img1.jpg') no-repeat center / cover;
+    height: 500px;
+    position: relative;
+}
+
+.main-content .main-top h1 {
+    background: rgba(105, 105, 105, 0.5);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: 5px;
+}
+
+.main-content .main-info {
+    /* background: tomato; */
+    width: 40%;
+    float: left;
+    margin: 10px auto;
+    /* height: 80px; */
+}
+
+.main-content h2 {
+    background: #000;
+    color: #fff;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+.main-content .main-info table {
+    /* background: tomato; */
+    border-collapse: collapse;
+    font-size: 13px;
+    width: 100%;
+    border-top: 1px solid gray ;
+}
+.main-content .main-info table td, tr {
+    /* border: 1px solid #000; */
+    padding: 10px 0;
+
+}
+.main-content .main-info table .lightgray {
+    background: lightgray;    
+}
+.main-content .main-info table .lightgray td:last-child {
+    text-align: right;
+}
+.main-content .main-info table .gray {
+    background: gray;
+} 
+.main-content .main-info table .gray td:last-child {
+    text-align: right;
+}
+
+
+.main-content .main-gallery {
+    /* background: brown; */
+    width: 38%;
+    float: left;
+    margin: 10px 5px;
+    /* height: 80px; */
+}
+.main-content .main-gallery ul {
+    margin: 3%;
+}
+.main-content .main-gallery ul li {
+    width: 30%;
+    height: 120px;
+} 
+.main-content .main-gallery ul .img1 {
+    /* width: 30%; */
+    /* height: 50px; */
+    background: url('../images/icon1.jpg') no-repeat center / cover;
+    float: left;
+    margin-right: 10px
+}
+.main-content .main-gallery ul .img2 {
+    /* width: 30%; */
+    /* height: 50px; */
+    background: url('../images/icon2.jpg') no-repeat center / cover;
+    float: left;
+    margin-right: 10px
+}
+.main-content .main-gallery ul .img3 {
+    /* width: 30%; */
+    /* height: 50px; */
+    background: url('../images/icon3.jpg') no-repeat center / cover;
+    float: left;
+}
+.main-content .main-direct {
+    height: 160px;
+    background: url('../images/contents.jpg') no-repeat center / cover;
+    width: 20%;
+    height: 160px;
+    float: right;
+    margin: 10px auto;
+
+    position: relative;
+}
+.main-content .main-direct h3 {
+    background: rgba(105, 105, 105, 0.5);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+.main-content footer {
+    background: gray;
+    height: 100px;
+    clear: both; position: relative;
+}
+.main-content footer h4 {
+    padding: 40px;
+}
+
+.main-content footer .sns ul .sns1 {
+    width: 5%;
+    height: 50px;
+    background: url('../images/sns1.jpg') no-repeat center /cover;
+    float: left;
+    
+    position: absolute;
+    top: 10px;
+    right: 140px;
+}
+.main-content footer .sns ul .sns2 {
+    width: 5%;
+    height: 50px;
+    background: url('../images/sns2.jpg') no-repeat center /cover;
+    float: left;
+
+    position: absolute;
+    top: 10px;
+    right: 75px;
+}
+.main-content footer .sns ul .sns3 {
+    width: 5%;
+    height: 50px;
+    background: url('../images/sns3.jpg') no-repeat center /cover;
+    float: left;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.main-content footer select {
+    width: 192px;
+    height: 25px;
+    position: absolute;
+    top: 65px;
+    right: 5px;
+
+}
+
+
